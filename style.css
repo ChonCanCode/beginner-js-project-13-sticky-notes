@@ -1,10 +1,10 @@
-*{
-    font-family: "Playwrite GB S";
+* {
+    font-family: "Playwrite GB S", sans-serif;
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     background: rgb(142, 135, 225);
     font-size: 1rem;
 }
@@ -14,11 +14,11 @@ body{
     margin: auto;
 }
 
-.container1{
+.container1 {
     margin-left: 5%;
 }
 
-.container2{
+.container2 {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -26,35 +26,35 @@ body{
     margin-left: 5%;
 }
 
-.container3{
-    display: none;
+.container3 {
+    /* display: none; */
     position: absolute;
     top: 26%;
     left: 40%;
 }
 
-
-textarea{
-    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.3);
-    outline:none;
+textarea {
+    box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.3);
+    outline: none;
     border: none;
     width: 275px;
     height: 275px;
-    padding: 40px 25px 25px 25px
+    padding: 40px 25px 25px 25px;
 }
 
-svg{
+#check-icon, #x-icon {
     color: gray;
+    cursor: pointer;
 }
 
-#check-icon{
+#check-icon {
     position: absolute;
     right: 17%;
     top: 4%;
 }
 
-#x-icon{
+#x-icon {
     position: absolute;
     right: 5%;
-    top:4%;
+    top: 4%;
 }
