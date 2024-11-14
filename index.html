@@ -17,7 +17,7 @@
         </div>
         <div class="container2"></div>
         <div class="container3">
-            <form onsubmit="event.preventDefault(); createNote();">
+            <div onsubmit="event.preventDefault(); createNote();">
                 <textarea id="note-text" placeholder="Write Note..." maxlength="96"></textarea>
                 <button type="submit">
                     <svg id="check-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
@@ -31,9 +31,19 @@
                         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
                     </svg>
                 </button>
-            </form>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
+
+<form action="/submit-url" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <button type="submit">Submit</button>
+</form>
